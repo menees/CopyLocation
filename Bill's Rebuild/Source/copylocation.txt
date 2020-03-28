@@ -1,0 +1,77 @@
+Copy Location Shell Extension
+
+
+This shell extension adds the ability to copy file and
+folder names from the Windows Explorer window to the
+clipboard.
+Simply select the file(s) whose name you want to copy,
+right-click and select "Copy File Path" or "Copy File Name"
+from the context menu. Then paste to any editor.
+Copy File Path - copies the entire path to the file.
+Copy File Name - copies only the file name without the folder.
+
+
+Setup
+
+1. Unzip CopyLocation.zip to the folder where you want to
+   install the utility (e.g., C:\Winnt).
+2. Go to the installation folder and double-click on
+   Install.bat.
+3. If you wish, you can delete Install.bat.
+
+Install.bat registers CopyLocation.dll in the system.
+
+Alternatively you can:
+1. Copy CopyLocation.dll to the installation folder (e.g.,
+   C:\Winnt).
+2. From the Start menu select Run...
+3. Type "regsvr32.exe C:\Winnt\CopyLocation.dll" and press
+   OK (specify the exact installation folder)
+
+Note: you have to have administrative rights to run regsvr32.exe
+      on Windows NT.
+
+To uninstall the shell extension:
+1. From the Start menu select Run...
+2. Type "regsvr32.exe /u C:\Winnt\CopyLocation.dll" and
+   press OK (specify the exact installation folder)
+3. Delete CopyLocation.dll from the installation folder.
+
+
+Possible problems
+
+This shell extension has been tested on Windows 98, Windows
+NT 4.0, Windows 2000 and Windows XP with Internet Explorer 5.0
+to 6.0.
+I don't know how it will function under other operating systems.
+Please write to me (grebulon@gmail.com) if you encounter any
+problems.
+
+
+History
+
+Version 1.00.1
+  Some users had minor compilation problems.
+
+Version 1.00.0
+  First release outside my small beta tester comunity.
+
+
+Freeware
+
+This software is free. It is distributed with the
+source code and you are encouraged to do anything you
+want with it. If you do anything interesting, I'd be
+happy to hear about it.
+
+
+Contacting me
+
+For comments, suggestions, improvements, bug reports,
+etc. you can contact me at:
+
+e-mail: grebulon@gmail.com
+web:    http://grebulon.com
+
+Have fun
+Itay Szekely

@@ -1,0 +1,21 @@
+CopyLocation.cpp
+Line 73: Use SetStringValue instead of SetValue and swap the parameter order:
+New: lRet = reg.SetStringValue(_T("{A7847D3E-09F3-11D4-8F6D-0080AD87DD41}"), _T("CopyLocationShl extension") );
+
+CopyLocation.def
+Remove @n on each line.
+
+CopyLocationShl.cpp
+Line 13: Comment out m_hCopyBmp assignment.
+Line 106: Change GetCommandString’s first parameter (idCmd) from UINT to UINT_PTR.
+Line 197: Change size variable to SIZE_T instead of long.
+Line 221: Change pos variable to SIZE_T instead of long.
+
+CopyLocationShl.h
+Line 39: Change GetCommandString’s first parameter (idCmd) from UINT to UINT_PTR.
+
+StdAfx.cpp
+Remove #include <statreg.cpp> and #include <atlimpl.cpp>.
+
+StdAfx.h
+Add #include <shlguid.h>
